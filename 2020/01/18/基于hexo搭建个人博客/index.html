@@ -20,8 +20,9 @@
 <meta property="og:image" content="http://yoursite.com/2020/01/18/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192307276.png">
 <meta property="og:image" content="http://yoursite.com/2020/01/18/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192341553.png">
 <meta property="og:image" content="http://yoursite.com/2020/01/18/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192606431.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/18/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118201830107.png">
 <meta property="article:published_time" content="2020-01-18T11:57:32.028Z">
-<meta property="article:modified_time" content="2020-01-18T12:00:37.894Z">
+<meta property="article:modified_time" content="2020-01-18T12:18:33.588Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/01/18/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118005331786.png">
@@ -220,11 +221,13 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
 <p>注意:</p>
-<blockquote>
-<p>hexo init 会初始化 Hexo 环境, 该操作会清空.git 文件夹, 导致版本控制信息会丢失.</p>
-<p>因此除了首次搭建环境之外, 无需运行此命令.</p>
-<p>如果万不得已出现 Hexo 环境损坏, 需要重新初始化, 可以先拷贝出 .git 文件夹, 然后搭建环境并初始化之后, 将 .git 信息重新拷贝回来.</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo init 会初始化 Hexo 环境, 该操作会清空.git 文件夹, 导致版本控制信息会丢失.</span><br><span class="line"></span><br><span class="line">因此除了首次搭建环境之外, 无需运行此命令.</span><br><span class="line"></span><br><span class="line">如果万不得已出现 Hexo 环境损坏, 需要重新初始化, 可以先拷贝出 .git 文件夹, 然后搭建环境并初始化之后, 将 .git 信息重新拷贝回来.</span><br></pre></td></tr></table></figure>
+
+<h1 id="博客中的图片"><a href="#博客中的图片" class="headerlink" title="博客中的图片"></a>博客中的图片</h1><h2 id="暂时解决办法1"><a href="#暂时解决办法1" class="headerlink" title="暂时解决办法1"></a>暂时解决办法1</h2><p>用<code>typora</code>编辑 md 文件，typora作如下设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;img&#x2F;$&#123;filename&#125;.assets</span><br></pre></td></tr></table></figure>
+
+<p><img src="img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118201830107.png" alt="image-20200118201830107"></p>
+<p>以<code>hexo\source\_posts\基于hexo搭建个人博客.md</code>为例，执行<code>hexo g</code>后，将<code>hexo\source\_posts\img\基于hexo搭建个人博客.assets</code>拷贝到<code>hexo\public\2020\01\18\基于hexo搭建个人博客\img\基于hexo搭建个人博客.assets</code>，然后执行<code>hexo d</code></p>
 
       
     </div>

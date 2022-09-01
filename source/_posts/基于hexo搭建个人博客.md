@@ -104,7 +104,7 @@ ssh-keygen -t rsa -C z*@*.com
 
 打开`hexo` 文件夹下的`_config.yml`文件，按照下图进行修改。
 
-![image-20200118005331786](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118005331786.png)
+![image-20200118005331786](image-20200118005331786.png)
 
 在`hexo` 文件夹下执行如下命令：
 
@@ -141,7 +141,7 @@ git clone https://github.com/levblanc/hexo-theme-aero-dual
 
 等待下载完成后即可在 themes 目录下生成 hexo-theme-aero-dual 文件夹，然后打开 Hexo 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：hexo-theme-aero-dual （其他主题修改成相应名称即可），再次注意冒号后面有一个空格！
 
-![img](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4N2MwYTdlOS5wbmc.jpg)
+![img](aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4N2MwYTdlOS5wbmc.jpg)
 
 更新主题后可能需要执行如下命令清楚缓存，否则服务器可能更新不了主题
 
@@ -167,7 +167,7 @@ git branch hexo
 
 1. 创建仓库，仓库名为`username.github.io`，并勾选用 readme 初始化。
 
-   ![image-20200118185207917](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118185207917.png)
+   ![image-20200118185207917](image-20200118185207917.png)
 
 2. clone 仓库到本地，并将仓库文件夹重命名为 hexo 
 
@@ -187,11 +187,11 @@ git push -u origin hexo #将新分支推送到github
 
 github 仓库页面，点选 branch-> change defult branch。
 
-![image-20200118192307276](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192307276.png)
+![image-20200118192307276](image-20200118192307276.png)
 
-![image-20200118192341553](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192341553.png)
+![image-20200118192341553](image-20200118192341553.png)
 
-![image-20200118192606431](img/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20200118192606431.png)
+![image-20200118192606431](image-20200118192606431.png)
 
 5. 初始化 hexo 环境
 

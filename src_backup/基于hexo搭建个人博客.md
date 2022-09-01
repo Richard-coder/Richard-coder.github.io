@@ -386,4 +386,62 @@ hexo d
 ```
 便可以正常显示图片了
 
+## Butterfly 主题
 
+参考
+
+> [Butterfly 安装文档(一) 快速开始](https://butterfly.js.org/posts/21cfbf15/)
+
+### 下载并应用主题
+
+进入到博客文件夹
+```
+cd Richard-coder.github.io
+```
+
+butterfly主题需要hexo版本大于5.3, 升级hexo
+```
+npm update #不要有cnpm
+npm audit fix
+npm audit fix --force
+hexo vesion #查看版本 
+```
+
+下载主题
+```
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+```
+
+删除`themes\butterfly\.git`文件夹, 因为博客文件夹下已有`.git`, 多个git嵌套会导致推送失败
+
+安装插件
+```
+cnpm install hexo-renderer-pug hexo-renderer-stylus --save
+```
+
+应用主题, 修改 Hexo 根目录下的 _config.yml，把主题改为butterfly
+```
+theme: butterfly
+```
+
+为了减少升级主题后带来的不便，请使用以下方法（建议，可以不做）。
+
+在 `hexo` 的根目录创建一个文件 `_config.butterfly.yml`，并把主题目录的 `_config.yml` 内容复製到 `_config.butterfly.yml` 去。( 注意: 复製的是主题的 `_config.yml` ,而不是 `hexo` 的 `_config.yml`)
+
+> 注意： 不要把主题目录的 `_config.yml` 删掉
+
+> 注意： 以后只需要在 `_config.butterfly.yml`进行配置就行。
+> 如果使用了 `_config.butterfly.yml`， 配置主题的 `_config.yml` 将不会有效果。
+
+`Hexo`会自动合併主题中的`_config.yml`和 `_config.butterfly.yml`里的配置，如果存在同名配置，会使用`_config.butterfly.yml`的配置，其优先度较高。
+
+### 配置主题
+
+
+
+## 部署参考
+
+> [hexo超完整的搭建教程，让你拥有一个专属个人博客](https://zhuanlan.zhihu.com/p/44213627)
+> 
+> [使用hexo，如果换了电脑怎么更新博客？ - 直上云霄的回答 - 知乎](https://www.zhihu.com/question/21193762/answer/489124966)
+> 
